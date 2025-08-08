@@ -80,3 +80,6 @@ node_modules/
 *.JPG
 *.jpeg
 *.JPEG
+
+#verhindern von properties
+*.properties
