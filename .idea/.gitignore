@@ -73,4 +73,10 @@ node_modules/
 !/src/**/*.properties
 !/src/**/*.yml
 !/src/**/*.yaml
-
+# Verhindert das Pushen von Bilddateien (unabhängig von Groß-/Kleinschreibung)
+*.png
+*.PNG
+*.jpg
+*.JPG
+*.jpeg
+*.JPEG
