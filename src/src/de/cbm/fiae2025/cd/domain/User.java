@@ -11,23 +11,23 @@ public class User {
     boolean isAdmin;
 
     // Constructor
-    public User( String lastname, String email, String password, boolean isAdmin) {
-        this.username = lastname;
+    public User( String username, String email, String password, boolean isAdmin) {
+        this.username = username;
         this.email = email;
         this.password = password;
         this.isAdmin = isAdmin;
     }
 
     // Getter
-    public String getLastname() {return username;}
+    public String getUsername() {return username;}
     public String getEmail() {return email;}
     public String getPassword() {return password;}
     public boolean isAdmin() {return isAdmin;}
 
     // Setter
-    public void setLastname(String lastname) {
-        this.checknames(lastname);
-        this.username = lastname;
+    public void setUsername(String username) {
+        this.checknames(username);
+        this.username = username;
     }
     public void setEmail(String email) {
         this.email = email;
