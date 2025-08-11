@@ -19,10 +19,12 @@ public class User {
     }
 
     // Getter
+    public int getId() {return id;}
     public String getUsername() {return username;}
     public String getEmail() {return email;}
     public String getPassword() {return password;}
-    public boolean isAdmin() {return isAdmin;}
+    public boolean getAdmin() {return isAdmin;}
+
 
     // Setter
     public void setUsername(String username) {
@@ -38,7 +40,12 @@ public class User {
     public void setAdmin(boolean admin) {
         isAdmin = admin;
     }
-
+    public void setId(int id) {
+        if (this.id > 0) {
+            throw new IllegalArgumentException();
+        }
+        this.id = id;
+    }
 
     // Prüfung der Richtigkeit des Namens
     public void checknames(String name) {
