@@ -53,7 +53,7 @@ public class User {
         User user = (User) o;
         return Objects.equals(username, user.username);
     }
-
+//hallo welt
     @Override
     public int hashCode() {return Objects.hash(username);}
 }
